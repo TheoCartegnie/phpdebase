@@ -6,11 +6,15 @@
 
     <h1>My first PHP page</h1>
     <?php
+
+    include 'item.php';
     echo "Hello world!";
     (int) $test = 0;
     (int) $test2 = $test;
     ?>
 
 </body>
+
+
 
 </html>

@@ -33,14 +33,13 @@
 }
 
 
-    $article = new Article("Mon super article",10,"../");
-
+    $article = new Article("Cosmic ghost riders",10,"images/cosmicghostrider.jpg");
 
     ?>
 
 
     <h1><?php echo $article->GetName()?></h1>
-    <img src="pays/$article->GetPicturePath()'.gif" alt="" />;
+    <img src="<?php echo $article->GetPicturePath() ?>" alt="test" />
     <h3><?php echo $article->GetPrice()?></h3>
    
     
