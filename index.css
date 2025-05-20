@@ -1,0 +1,92 @@
+html
+{
+    height : auto;
+}
+
+body 
+{
+    margin: 0%;
+}
+
+header
+{
+    display: flex;
+    flex-grow: 4;
+    flex-direction: row;
+    background-color: grey;
+    width: 100%;
+}
+
+.link
+{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 34px;
+    width: 50%;
+    color: black;
+}
+
+.headerLink
+{
+    text-align: center;
+}
+
+.WebSiteTitle
+{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.footerLink
+{
+    margin-left: 5%;
+    margin-right: 2%;
+}
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+ 
+    background-color: grey;
+    margin-top: auto;
+}
+
+.mosaïque
+{
+    background-color: grey;
+    text-align: center;
+    width: 100%;
+}
+/*GALLERY*/
+
+div.gallery{
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+    
+  }
+
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+
+    text-align: center;
+  }

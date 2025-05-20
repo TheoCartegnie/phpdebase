@@ -1,7 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <body>
-    <?php
+
+<?php
 
     class Article
     {
@@ -32,22 +30,5 @@
 
 }
 
+?>
 
-    $article = new Article("Cosmic ghost riders",10,"images/cosmicghostrider.jpg");
-
-    ?>
-
-
-    <h1><?php echo $article->GetName()?></h1>
-    <img src="<?php echo $article->GetPicturePath() ?>" alt="test" />
-    <h3><?php echo $article->GetPrice()?></h3>
-   
-    
-</body>
-
-
-
-    
-
-
-</html>
