@@ -68,25 +68,17 @@ footer
 }
 /*GALLERY*/
 
-div.gallery{
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-div.gallery:hover {
-    border: 1px solid #777;
-    
-  }
-
-  div.gallery img {
-    width: 100%;
+.pictRect {
+    width: 10%;
     height: auto;
-  }
-  
-  div.desc {
-    padding: 15px;
-
+    margin-left: 5px;
+    margin-right: 5px;
     text-align: center;
   }
+ 

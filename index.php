@@ -12,7 +12,7 @@
 
       <header>
             <img class = "logo" src = "images/icons8-enclume-100.png" alt = "Picture of an enclume with a hammer on it, its the logo of the entreprise">
-            <h1 class="WebSiteTitle">Asset forge</h1>
+            <h1 class="WebSiteTitle">Comics library</h1>
             <div class = "link">
                 <a class = "headerLink" href = "ThemePage.html"> Gallery</a>
                 <a class = "headerLink" href = "GamePage.html"> Jeux</a>
@@ -21,10 +21,8 @@
         </header>
 
 
-    <div id = "Gallery">
-
-        <?php displayArticle()?>
-    
+    <div class = "gallery">
+         <?php displayArticle()?>
     </div>
 
 
@@ -48,14 +46,14 @@
   
     $article = [30]; //new Article("Cosmic ghost riders",10,"images/cosmicghostrider.jpg");
 
-   for($i = 0 ; $i < 30; $i++)
+   for($i = 0 ; $i < 100; $i++)
    {
         $article[$i] = GetPicture($i); 
    }
 
     function GetPicture()
     {
-        return new Article("Cosmic ghost rider #",10,"images/cosmicghostrider.jpg");
+        return new Article("Cosmic ghost rider",10,"images/cosmicghostrider.jpg");
     }
 
     function displayArticle()
@@ -63,17 +61,19 @@
         include 'Gallery.php';
         $gallery = new Gallery();
         $article = GetPicture();
-        for($i = 0 ; $i < 30; $i++)
+        for($i = 0 ; $i < 100; $i++)
         {
+          echo '<div class ="pictRect">';
           echo displayTitle($article->getName());
           echo displayPicture($article->getPicturePath());
           echo displayPrice($article->getPrice());
+          echo '</div>';
         }
     }
 
     function displayTitle($title)
     {
-           echo "<h1>$title</h1>";
+        echo "<h2>$title</h2>";
     }
 
 
@@ -84,13 +84,8 @@
 
     function displayPicture($article)
     {
-        //var_dump($article);
-       echo '<img id="ComicsPicture" src="' . $article . '" alt="test" />';
+       echo '<img id="ComicsPicture" src="' . $article . '" alt="test width ="90"  height = "160" " />';
     }
-
-
-
-
     ?>
 
 
