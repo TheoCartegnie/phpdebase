@@ -75,10 +75,16 @@ footer
 }
 
 .pictRect {
-    width: 10%;
+    width: 20%;
     height: auto;
     margin-left: 5px;
     margin-right: 5px;
     text-align: center;
+  }
+
+  .price 
+  {
+    margin-top: 0%;
+    margin-bottom: 0%;
   }
  

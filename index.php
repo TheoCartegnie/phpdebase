@@ -60,15 +60,26 @@
     {
         include 'Gallery.php';
         $gallery = new Gallery();
-        $article = GetPicture();
-        for($i = 0 ; $i < 100; $i++)
+        $articleGosthRider = new Article("Cosmic ghost rider",4,"images/cosmicghostrider.jpg");
+        $articleSpawn = new Article("Spawn rebirth",8,"images/Spawn.jpg");
+        $articleGeiger = new Article("The unamed : Geiger",25,"images/geigerx.jpg");
+
+        $article = [$articleGosthRider,$articleGeiger,$articleSpawn];
+
+        for($i = 0 ; $i < sizeof($article); $i++)
         {
           echo '<div class ="pictRect">';
-          echo displayTitle($article->getName());
-          echo displayPicture($article->getPicturePath());
-          echo displayPrice($article->getPrice());
+          echo displayTitle($article[$i]->getName());
+          echo displayPicture($article[$i]->getPicturePath());
+          echo displayPrice($article[$i]->getPrice());
+          echo '<input class="styled" type="button" value="Add" />';
           echo '</div>';
         }
+    }
+
+    function Add()
+    {
+        var_dump("TEST");
     }
 
     function displayTitle($title)
@@ -79,12 +90,12 @@
 
     function displayPrice($price)
     {
-        echo "<h2>$price</h2>";
+        echo '<h2 class ="price">' . $price . '$' . '</h2 class ="price">';
     }
 
     function displayPicture($article)
     {
-       echo '<img id="ComicsPicture" src="' . $article . '" alt="test width ="90"  height = "160" " />';
+       echo '<img id="ComicsPicture" src="' . $article . '" alt="test width ="180"  height = "320" " />';
     }
     ?>
 
