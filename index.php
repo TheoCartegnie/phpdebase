@@ -56,7 +56,7 @@
         {
           echo displayTitle("Cosmic ghost rider");
           echo displayPicture("images/cosmicghostrider.jpg");
-          echo displayPrice("10");
+          echo displayPrice($i);
         }
     }
 
@@ -73,7 +73,7 @@
 
     function displayPicture($article)
     {
-            echo "<img id = 'ComicsPicture' src= $article alt='test' />";
+        echo "<img id = 'ComicsPicture' src= $article alt='test' />";
     }
 
 
