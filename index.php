@@ -29,6 +29,14 @@
 
 
     <?php
+
+
+
+
+
+
+
+
     /*
         A - refaire la gallery
             1 - Se connecter a l'api marvel
@@ -37,6 +45,7 @@
                <h3 id = "ComicsPrice"><?php echo $article->GetPrice()?></h3>
     */ 
     include 'item.php';
+  
     $article = [30]; //new Article("Cosmic ghost riders",10,"images/cosmicghostrider.jpg");
 
    for($i = 0 ; $i < 30; $i++)
@@ -44,19 +53,21 @@
         $article[$i] = GetPicture($i); 
    }
 
-    function GetPicture($i)
+    function GetPicture()
     {
-        
-        return new Article("Cosmic ghost rider #",10,"");
+        return new Article("Cosmic ghost rider #",10,"images/cosmicghostrider.jpg");
     }
 
     function displayArticle()
     {
+        include 'Gallery.php';
+        $gallery = new Gallery();
+        $article = GetPicture();
         for($i = 0 ; $i < 30; $i++)
         {
-          echo displayTitle("Cosmic ghost rider");
-          echo displayPicture("images/cosmicghostrider.jpg");
-          echo displayPrice($i);
+          echo displayTitle($article->getName());
+          echo displayPicture($article->getPicturePath());
+          echo displayPrice($article->getPrice());
         }
     }
 
@@ -73,7 +84,8 @@
 
     function displayPicture($article)
     {
-        echo "<img id = 'ComicsPicture' src= $article alt='test' />";
+        //var_dump($article);
+       echo '<img id="ComicsPicture" src="' . $article . '" alt="test" />';
     }
 
 

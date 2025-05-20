@@ -14,18 +14,18 @@
         }
 
 
-    function GetName() {
-        echo $this->name;
+   public function getName() {
+        return $this->name;
     }
 
-    function GetPrice()
+   public function getPrice()
     {
-        echo $this->price;
+        return $this->price;
     }
 
-    function GetPicturePath()
+   public function getPicturePath()
     {
-        echo $this->picturePath;
+        return $this->picturePath;
     }
 
 }
