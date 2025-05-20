@@ -68,7 +68,7 @@
 
     function displayPrice($price)
     {
-        echo "<h3>$price</h3>";
+        echo "<h2>$price</h2>";
     }
 
     function displayPicture($article)
