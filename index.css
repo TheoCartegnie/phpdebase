@@ -51,9 +51,9 @@ footer
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    /*position: fixed;
+     bottom: 0;
+    left: 0; */
     width: 100%;
  
     background-color: grey;
@@ -69,13 +69,15 @@ footer
 /*GALLERY*/
 
 .gallery{
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
 
 .pictRect {
-    width: 20%;
+
+    width: 10%;
     height: auto;
     margin-left: 5px;
     margin-right: 5px;
@@ -88,3 +90,8 @@ footer
     margin-bottom: 0%;
   }
  
+.ArticleParagraphe
+{
+    margin-top :0px;
+    margin-bottom: 0px;
+}

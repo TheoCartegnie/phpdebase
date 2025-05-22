@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="traitement.css" />
-</head>
-
+<?php include('header.php');?>
+<title> Comics pages </title>
 <body>
 
     <h1><?php echo $_POST["name"]; ?></h1>
@@ -30,7 +24,17 @@ Sed elementum consectetur augue, id sollicitudin turpis efficitur ac. Nunc ornar
 Aliquam ornare cursus nunc, in semper est hendrerit condimentum. Aenean mattis velit risus, sed condimentum magna volutpat a. 
 Duis sit amet odio magna. Suspendisse potenti. Sed imperdiet faucibus massa, non congue ex fringilla vel. Aliquam. 
             </h3>
+
+   
         </div>
+
+ 
+<form action="purchase.php" method="POST">
+<input type="number" name = "test">
+<input type="submit">
+</form>
+
+
     </div>
 
 
@@ -45,4 +49,4 @@ Duis sit amet odio magna. Suspendisse potenti. Sed imperdiet faucibus massa, non
 
 </body>
 
-</html>
+<?php include('footer.php');?>
