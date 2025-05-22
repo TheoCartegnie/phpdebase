@@ -69,19 +69,15 @@ footer
 /*GALLERY*/
 
 .gallery{
-    text-align: center;
     display: flex;
+    justify-content: left;
+    flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
 }
 
-.pictRect {
-
-    width: 10%;
-    height: auto;
-    margin-left: 5px;
-    margin-right: 5px;
-    text-align: center;
+.pictRect { 
+   width: auto;
+   height: 600px;
   }
 
   .price 
@@ -90,8 +86,17 @@ footer
     margin-bottom: 0%;
   }
  
+.ArticleRect
+{
+    width: 20%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
 .ArticleParagraphe
 {
+    text-align: center;
+    width: 100%;
     margin-top :0px;
     margin-bottom: 0px;
 }

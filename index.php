@@ -1,4 +1,4 @@
-<?php require('header.php');?>
+<?php require('Templates/header.php');?>
 <title> Comics library </title>
 
 <body>
@@ -6,7 +6,7 @@
 
 </body>
 
-<?php require('footer.php');?>
+<?php require('Templates/footer.php');?>
 
 
 

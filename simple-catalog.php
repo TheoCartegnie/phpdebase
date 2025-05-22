@@ -1,5 +1,5 @@
-<?php include('header.php');?>
-<title> simple_catalog </title>
+<?php include('Templates/header.php');?>
+<title> simple catalog </title>
 
 <body>
     <?php include('data.php');?>
@@ -15,6 +15,6 @@
 
 </body>
 
-<?php include('footer.php');?>
+<?php include('Templates/footer.php');?>
 
 
