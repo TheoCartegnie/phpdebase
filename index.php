@@ -3,6 +3,7 @@
 
 <body>
 
+<?php require('catalog-with-keys.php'); ?>
 
 </body>
 

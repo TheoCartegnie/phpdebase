@@ -100,3 +100,13 @@ footer
     margin-top :0px;
     margin-bottom: 0px;
 }
+.ButtonRect
+{
+    align-items: center;
+}
+
+.ButtonShape
+{
+    align-items: center;
+    width: 25%;
+}

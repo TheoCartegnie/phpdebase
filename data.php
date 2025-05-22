@@ -32,7 +32,7 @@ $products = [
 [
     "name" => "Lady Mechanika T1",
     "price" => 3000,
-    "weight" => 40000,
+    "weight" => 40000000,
     "discount" => 2,
     "picture url" => "images/LadyMechanika1.jpg"
 ],
