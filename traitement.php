@@ -10,6 +10,7 @@
             <div class="PictureRect">
                 <img class="pic" src=<?php echo $_POST["picture_url"]; ?>>
                 <h1><?php echo $_POST["price"]; ?>$</h1>
+                
             </div>
              
             <div class="descriptionRect">
