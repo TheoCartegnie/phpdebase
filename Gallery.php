@@ -85,12 +85,7 @@ class Gallery
         return new Article("Cosmic ghost rider",10,"images/cosmicghostrider.jpg");
     }
 
-    if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['Add']))
-    {
-        add(GetPicture());
-        echo "Article ajouté au panier avec succès !";
-        debug_to_console("Test dans add to panier");
-    }
+
 
 
 function debug_to_console($data) {

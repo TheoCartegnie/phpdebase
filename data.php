@@ -5,7 +5,7 @@ $iPhoneProducts = ["iPhone","iPad","iMac"];
 $products = [ 
 "cosmicghostrider" =>
 [
-    "name" => "Comsic ghost riders",
+    "name" => "Cosmic ghost riders",
     "price" => 8,
     "weight" => 200,
     "discount" => 10,

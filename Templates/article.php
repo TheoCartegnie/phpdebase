@@ -3,9 +3,10 @@
 
     class Article
     {
-        public $name = "";
-        public $price;
-        private $picturePath;        
+        private $name = "";
+        private $price;
+        private $picturePath;   
+
         public function __construct($nom, $prix, $picturePath)
         {
             $this->name = $nom;

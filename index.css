@@ -110,3 +110,50 @@ footer
     align-items: center;
     width: 25%;
 }
+
+.ButtonPic
+{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+/*CART*/
+.ComicsRect
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.PictureRect
+{
+    text-align: center;
+    width: 25%;
+    height: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.pic
+{
+    width: 100%;
+    height: auto;
+}
+
+
+.descriptionRect
+{
+    width: 60%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.mainTitle
+{
+    margin-left: 70px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

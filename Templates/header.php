@@ -19,7 +19,15 @@
             <a class="headerLink" href="AboutUs.html"> About us</a>
 
             <form method="post" action="traitement.php">
-                <button type="submit" name="validBasket"> Cart </button>
+                <button type="submit" name="validBasket"> <img class = "ButtonPic" src ="images/cadie.jpg"></button>
             </form>
 
     </header>
+
+    <?php
+    /* 
+    1 - Envoyer un formulaire avec les info de l'article
+    
+    2 - Ajouter plusieurs articles a un formulaire - afficher le contenu du formualaire apres l'envoie
+    */
+    ?>
