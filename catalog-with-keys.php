@@ -12,14 +12,13 @@ error_reporting(E_ALL);
     <?php include('data.php');?>
     <?php include('function.php');?>
 
-
     <div class = "gallery">
         <?php foreach ($products as $product):?>
             <div class = "ArticleRect">
                 <h3 class ="ArticleParagraphe"><?php echo $product["name"];?></h3>
-                <img class = "pictRect" src = <?php echo $product["picture url"];?>>
-                <?php include "Templates/Articleformulaire.php"?>
-                <?php include "Templates/ArticleInfo.php"?>             
+                <img class = "pictRect" src = <?php echo $product["picture_url"];?>>
+                <?php GetFormat($product);?>    
+                <?php include ("Templates/ArticleInfo.php");?>             
             </div>
         <?php endforeach;?>
     </div>

@@ -9,7 +9,7 @@ $products = [
     "price" => 8,
     "weight" => 200,
     "discount" => 10,
-    "picture url" => "images/cosmicghostrider.jpg" 
+    "picture_url" => "images/cosmicghostrider.jpg" 
 ],
 
 "geiger" => 
@@ -18,7 +18,7 @@ $products = [
     "price" => 25,
     "weight" => 400,
     "discount" => 10,
-    "picture url" => "images/geigerx.jpg"
+    "picture_url" => "images/geigerx.jpg"
 ],
 "spawn" => 
 [
@@ -26,7 +26,7 @@ $products = [
     "price" => 25,
     "weight" => 400,
     "discount" => 10,
-    "picture url" => "images/Spawn.jpg"
+    "picture_url" => "images/Spawn.jpg"
 ],
 "LadyMecanika" => 
 [
@@ -34,7 +34,7 @@ $products = [
     "price" => 3000,
     "weight" => 40000000,
     "discount" => 2,
-    "picture url" => "images/LadyMechanika1.jpg"
+    "picture_url" => "images/LadyMechanika1.jpg"
 ],
 "Descender" => 
 [
@@ -42,7 +42,7 @@ $products = [
     "price" => 50,
     "weight" => 1000,
     "discount" => 10,
-    "picture url" => "images/descender.jpg"
+    "picture_url" => "images/descender.jpg"
 ],
 "Descender2" => 
 [
@@ -50,7 +50,7 @@ $products = [
     "price" => 50,
     "weight" => 1000,
     "discount" => 10,
-    "picture url" => "images/descender.jpg"
+    "picture_url" => "images/descender.jpg"
 ],
 "Descender3" => 
 [
@@ -58,7 +58,7 @@ $products = [
     "price" => 50,
     "weight" => 1000,
     "discount" => 10,
-    "picture url" => "images/descender.jpg"
+    "picture_url" => "images/descender.jpg"
 ]
 
 
