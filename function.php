@@ -35,15 +35,16 @@ $TVA = 0.0;
 
 function GetFormat($article)
     {
-            echo '<form class ="ButtonRect" action ="traitement.php" method="POST">';
+        echo '<form class ="ButtonRect" action ="traitement.php" method="POST">';
                 
-          echo '<input name="name" type="hidden" value="' . htmlspecialchars($article["name"]) . '">';
-                echo '<input name = "price" type ="hidden" value="' . htmlspecialchars($article["price"]) . '" >';
-                echo '<input name = "picture_url" type ="hidden"value="' . htmlspecialchars($article["picture_url"]) . '">"';
-                echo '<input type ="number" value="Quantity">';
-                echo '<input class ="ButtonShape" type ="submit" value="View">';
+            echo '<input name="name" type="hidden" value="' . htmlspecialchars($article["name"]) . '">';
+            echo '<input name = "price" type ="hidden" value="' . htmlspecialchars($article["price"]) . '" >';
+            echo '<input name = "picture_url" type ="hidden"value="' . htmlspecialchars($article["picture_url"]) . '">"';
+            echo '<input name = "discount" type ="hidden"value="' . htmlspecialchars($article["discount"]) . '">"';
+            echo '<input name = "quantity" type ="number" value="">';
+            echo '<input class ="ButtonShape" type ="submit" value="View">';
                     
-            echo '</form>';
+        echo '</form>';
     }
 
 
