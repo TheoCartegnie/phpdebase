@@ -1,6 +1,5 @@
-<?php require('Templates/header.php');?>
 
-<title> Comics library </title>
+<?php require('Templates/header.php');?>
 
 <body>
 
@@ -8,17 +7,18 @@
     <input type ="submit" value="BD">
     </form>
 
-    <form action="Manga.php">
-    <input type ="submit" value="Manga">
+    <form action="">
+    <input type ="submit" value="Display all">
     </form>
 
    <?php include('data.php');?>
    <?php include('function.php');?>
-   <?php $Products =  GetComicsData()?>
+   <?php $Products = GetMangaData()?>
 
 <?php require('catalog-with-keys.php'); ?>
 
+
 </body>
 
-<?php require('Templates/footer.php');?>
 
+<?php require('Templates/footer.php');?>

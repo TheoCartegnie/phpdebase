@@ -1,5 +1,5 @@
 <?php
-
+include('SQLrequest.php');
 $TVA = 0.0;
 
     function formatPrice()
@@ -48,9 +48,6 @@ function GetFormat($article)
         echo '</form>';
     }
 
-
-
-
 function Connection()
 {
 
@@ -69,16 +66,33 @@ function Connection()
 
 }
 
-function GetComicsData()
+function GetMangaData()
 {
-    $SqlQuery = 'SELECT * FROM products';
+    $SqlQuery = GetProductFromCategorie("Manga");
+    return GetDataFromRequest($SqlQuery);
+}
 
+function GetBDData()
+{
+    $SqlQuery = GetProductFromCategorie("Comics");
+    return GetDataFromRequest($SqlQuery);
+}
+
+function GetDataFromRequest($Request)
+{
     $MySqlClient = Connection();
 
-    $recipesStatement = $MySqlClient->prepare($SqlQuery);
+    $recipesStatement = $MySqlClient->prepare($Request);
 
     $recipesStatement->execute();
     $recpies = $recipesStatement->fetchAll();
     return $recpies;
 }
+
+function GetComicsData()
+{
+    $SqlQuery = GetRequestProductData();
+    return GetDataFromRequest($SqlQuery);
+}
+
 ?>
