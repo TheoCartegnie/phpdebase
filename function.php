@@ -39,8 +39,9 @@ function GetFormat($article)
                 
             echo '<input name="name" type="hidden" value="' . htmlspecialchars($article["name"]) . '">';
             echo '<input name = "price" type ="hidden" value="' . htmlspecialchars($article["price"]) . '" >';
-            echo '<input name = "picture_url" type ="hidden"value="' . htmlspecialchars($article["picture_url"]) . '">"';
-            echo '<input name = "discount" type ="hidden"value="' . htmlspecialchars($article["discount"]) . '">"';
+            echo '<input name = "description" type ="hidden" value="' . htmlspecialchars($article["description"]) . '" >';
+            echo '<input name = "picture_url" type ="hidden"value="' . "images/" . ''. htmlspecialchars($article["picURL"]) .'">';
+            echo '<input name = "discount" type ="hidden"value="' . htmlspecialchars($article["discount"]) . '">';
             echo '<input name = "quantity" type ="number" value="">';
             echo '<input class ="ButtonShape" type ="submit" value="View">';
                     
@@ -48,4 +49,36 @@ function GetFormat($article)
     }
 
 
+
+
+function Connection()
+{
+
+    try 
+    {
+        return $mysqlClient = new PDO(
+            'mysql:host=localhost;dbname=my_app;charset=utf8',
+            'TheoC',
+            'motdepasse'
+        );
+    }
+    catch(Exception $e)
+    {
+    return die('Erreur : ' . $e->getMessage());
+    }
+
+}
+
+function GetComicsData()
+{
+    $SqlQuery = 'SELECT * FROM products';
+
+    $MySqlClient = Connection();
+
+    $recipesStatement = $MySqlClient->prepare($SqlQuery);
+
+    $recipesStatement->execute();
+    $recpies = $recipesStatement->fetchAll();
+    return $recpies;
+}
 ?>

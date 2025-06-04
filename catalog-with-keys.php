@@ -11,12 +11,12 @@ error_reporting(E_ALL);
 
     <?php include('data.php');?>
     <?php include('function.php');?>
-
+    <?php $TestProduct = GetComicsData()?>
     <div class = "gallery">
-        <?php foreach ($products as $product):?>
+        <?php foreach ($TestProduct as $product):?>
             <div class = "ArticleRect">
                 <h3 class ="ArticleParagraphe"><?php echo $product["name"];?></h3>
-                <img class = "pictRect" src = <?php echo $product["picture_url"];?>>
+                <img class = "pictRect" src =<?php echo "images/" . $product["picURL"];?>>
                 <?php GetFormat($product);?>    
                 <?php include ("Templates/ArticleInfo.php");?>             
             </div>
@@ -26,3 +26,8 @@ error_reporting(E_ALL);
     </body>
 
 </main>
+
+
+<?php
+
+?>
