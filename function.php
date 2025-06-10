@@ -42,8 +42,8 @@ function GetFormat($article)
             echo '<input name = "description" type ="hidden" value="' . htmlspecialchars($article["description"]) . '" >';
             echo '<input name = "picture_url" type ="hidden"value="' . "images/" . ''. htmlspecialchars($article["picURL"]) .'">';
             echo '<input name = "discount" type ="hidden"value="' . htmlspecialchars($article["discount"]) . '">';
-            echo '<input name = "quantity" type ="number" value="">';
-            echo '<input class ="ButtonShape" type ="submit" value="View">';
+            echo '<input name = "quantity" type ="number" value="'. 0 .'">';
+            echo '<input class ="ButtonShape" type ="submit" value="Selectionner">';
                     
         echo '</form>';
     }
